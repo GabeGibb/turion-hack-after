@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+body{
+    background-image: url('asset/background.svg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Space Mono', monospace;
+}
+
+#planets{
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    
+}   
+
+.planet{
+    background-position: center center;
+    background-size: cover;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 0.3s;
+}
+
+.planet:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+#mainContent{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10%;
+}
+
+#description{
+    color: white;
+}
+
+video{
+    width: 100%;
+    margin: auto;
+}
+
+#homeButton{
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    transition: .3s;
+}
+
+#homeButton:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#chatBox{
+    margin: 10%;
+    border: 1px solid white;
+    padding: 10%;
+    margin-bottom: 500px;
+}
+
+#messages{
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: grey;
+}
+
+#chatInput
+{
+    /* margin-top: 20px;
+    margin-left: 22%; */
+    margin: auto;
+    /* width: 50%; */
+    height: 50px;
+    font-size: xx-large;
+}
+
+.message{
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    border: 1px solid black;
+}
+
+
+#chatTitle{
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+
+.right{
+   margin-left: 50%;
+}
+
+#planetName{
+    color: red;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+.inputContainer{
+    margin: auto;
+    width: fit-content;
+    margin-top: 20px;
+}

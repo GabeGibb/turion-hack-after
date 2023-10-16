@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "devmode": "^2.0.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.0.1",
+    "ws": "^8.14.2"
+  }
+}
