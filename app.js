@@ -13,7 +13,7 @@ app.get('/planetPage/:planet', (req,res) =>{
 })
 
 app.get('/description/:planet', (req, res) => {
-    const config = require(__dirname + '\\videos\\planets.json');
+    const config = require(__dirname + '/videos/planets.json');
     res.send(config[req.params['planet']]['description'])
 });
 
@@ -38,9 +38,7 @@ const wsServer = new ws.Server({ noServer: true });
 
 wsServer.on('connection', (socket, req) => {
     CLIENTS.push(socket);
-    // for (let i = 0; i < messages.length; i++){
-    //     socket.send(JSON.stringify(messages[i]))
-    // }
+
 
     socket.on('message', message => {
         let m = message.toString('utf-8')
