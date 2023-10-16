@@ -2,7 +2,7 @@
 body{
     background-image: url('asset/background.svg');
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size:cover;
     margin: 0;
     overflow-x: hidden;
     font-family: 'Space Mono', monospace;
